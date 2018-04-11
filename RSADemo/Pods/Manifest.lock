@@ -1,0 +1,16 @@
+PODS:
+  - GTMBase64 (1.0.0)
+
+DEPENDENCIES:
+  - GTMBase64
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - GTMBase64
+
+SPEC CHECKSUMS:
+  GTMBase64: 0da7372e95f5171f3f652db38cde6716f8eb5e24
+
+PODFILE CHECKSUM: 990fd6b7b92f537399ec566b8cfbcaa8285d7ebd
+
+COCOAPODS: 1.5.0

@@ -1,0 +1,650 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22239655207CB00F00FA616B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22239654207CB00F00FA616B /* AppDelegate.swift */; };
+		22239657207CB00F00FA616B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22239656207CB00F00FA616B /* ViewController.swift */; };
+		2223965A207CB00F00FA616B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22239658207CB00F00FA616B /* Main.storyboard */; };
+		2223965C207CB00F00FA616B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2223965B207CB00F00FA616B /* Assets.xcassets */; };
+		2223965F207CB00F00FA616B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2223965D207CB00F00FA616B /* LaunchScreen.storyboard */; };
+		22CBCD81207DEF3600D0C580 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CBCD80207DEF3600D0C580 /* Security.framework */; };
+		22CBCD96207DF90F00D0C580 /* BBRSACryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 22CBCD95207DF90F00D0C580 /* BBRSACryptor.m */; };
+		22D43B3E207E408D00A195E5 /* RSATool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D43B3D207E408D00A195E5 /* RSATool.swift */; };
+		22D43B96207E460E00A195E5 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 22D43B42207E460E00A195E5 /* LICENSE */; };
+		22D43B97207E460E00A195E5 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D43B91207E460E00A195E5 /* libcrypto.a */; };
+		22D43B98207E460E00A195E5 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D43B92207E460E00A195E5 /* libssl.a */; };
+		CA45F6C60D3C34C64BA60AC0 /* Pods_RSA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378D58D8976FC3CF40809C33 /* Pods_RSA.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		22239651207CB00F00FA616B /* RSA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22239654207CB00F00FA616B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		22239656207CB00F00FA616B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		22239659207CB00F00FA616B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2223965B207CB00F00FA616B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2223965E207CB00F00FA616B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		22239660207CB00F00FA616B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22239666207CB02100FA616B /* RSA-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RSA-Bridging-Header.h"; sourceTree = "<group>"; };
+		22CBCD80207DEF3600D0C580 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		22CBCD94207DF90F00D0C580 /* BBRSACryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBRSACryptor.h; sourceTree = "<group>"; };
+		22CBCD95207DF90F00D0C580 /* BBRSACryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBRSACryptor.m; sourceTree = "<group>"; };
+		22D43B3D207E408D00A195E5 /* RSATool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSATool.swift; sourceTree = "<group>"; };
+		22D43B42207E460E00A195E5 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		22D43B44207E460E00A195E5 /* pem2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pem2.h; sourceTree = "<group>"; };
+		22D43B45207E460E00A195E5 /* pem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pem.h; sourceTree = "<group>"; };
+		22D43B46207E460E00A195E5 /* ssl3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl3.h; sourceTree = "<group>"; };
+		22D43B47207E460E00A195E5 /* ossl_typ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ossl_typ.h; sourceTree = "<group>"; };
+		22D43B48207E460E00A195E5 /* dtls1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dtls1.h; sourceTree = "<group>"; };
+		22D43B49207E460E00A195E5 /* err.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = err.h; sourceTree = "<group>"; };
+		22D43B4A207E460E00A195E5 /* bn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bn.h; sourceTree = "<group>"; };
+		22D43B4B207E460E00A195E5 /* blowfish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blowfish.h; sourceTree = "<group>"; };
+		22D43B4C207E460E00A195E5 /* cms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cms.h; sourceTree = "<group>"; };
+		22D43B4D207E460E00A195E5 /* engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = engine.h; sourceTree = "<group>"; };
+		22D43B4E207E460E00A195E5 /* conf_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conf_api.h; sourceTree = "<group>"; };
+		22D43B4F207E460E00A195E5 /* x509.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509.h; sourceTree = "<group>"; };
+		22D43B50207E460E00A195E5 /* asn1_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1_mac.h; sourceTree = "<group>"; };
+		22D43B51207E460E00A195E5 /* ui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ui.h; sourceTree = "<group>"; };
+		22D43B52207E460E00A195E5 /* kssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kssl.h; sourceTree = "<group>"; };
+		22D43B53207E460E00A195E5 /* sha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha.h; sourceTree = "<group>"; };
+		22D43B54207E460E00A195E5 /* symhacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = symhacks.h; sourceTree = "<group>"; };
+		22D43B55207E460E00A195E5 /* asn1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1.h; sourceTree = "<group>"; };
+		22D43B56207E460E00A195E5 /* opensslconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opensslconf.h; sourceTree = "<group>"; };
+		22D43B57207E460E00A195E5 /* bio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bio.h; sourceTree = "<group>"; };
+		22D43B58207E460E00A195E5 /* rc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rc2.h; sourceTree = "<group>"; };
+		22D43B59207E460E00A195E5 /* dh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dh.h; sourceTree = "<group>"; };
+		22D43B5A207E460E00A195E5 /* ui_compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ui_compat.h; sourceTree = "<group>"; };
+		22D43B5B207E460E00A195E5 /* x509v3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509v3.h; sourceTree = "<group>"; };
+		22D43B5C207E460E00A195E5 /* ssl23.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl23.h; sourceTree = "<group>"; };
+		22D43B5D207E460E00A195E5 /* conf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conf.h; sourceTree = "<group>"; };
+		22D43B5E207E460E00A195E5 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		22D43B5F207E460E00A195E5 /* x509_vfy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509_vfy.h; sourceTree = "<group>"; };
+		22D43B60207E460E00A195E5 /* txt_db.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = txt_db.h; sourceTree = "<group>"; };
+		22D43B61207E460E00A195E5 /* safestack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = safestack.h; sourceTree = "<group>"; };
+		22D43B62207E460E00A195E5 /* ecdsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdsa.h; sourceTree = "<group>"; };
+		22D43B63207E460E00A195E5 /* objects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objects.h; sourceTree = "<group>"; };
+		22D43B64207E460E00A195E5 /* pkcs12.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkcs12.h; sourceTree = "<group>"; };
+		22D43B65207E460E00A195E5 /* crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto.h; sourceTree = "<group>"; };
+		22D43B66207E460E00A195E5 /* opensslv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opensslv.h; sourceTree = "<group>"; };
+		22D43B67207E460E00A195E5 /* pkcs7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkcs7.h; sourceTree = "<group>"; };
+		22D43B68207E460E00A195E5 /* obj_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = obj_mac.h; sourceTree = "<group>"; };
+		22D43B69207E460E00A195E5 /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
+		22D43B6A207E460E00A195E5 /* ssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl.h; sourceTree = "<group>"; };
+		22D43B6B207E460E00A195E5 /* srp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = srp.h; sourceTree = "<group>"; };
+		22D43B6C207E460E00A195E5 /* camellia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camellia.h; sourceTree = "<group>"; };
+		22D43B6D207E460E00A195E5 /* evp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = evp.h; sourceTree = "<group>"; };
+		22D43B6E207E460E00A195E5 /* e_os2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = e_os2.h; sourceTree = "<group>"; };
+		22D43B6F207E460E00A195E5 /* md4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md4.h; sourceTree = "<group>"; };
+		22D43B70207E460E00A195E5 /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		22D43B71207E460E00A195E5 /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		22D43B72207E460E00A195E5 /* comp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comp.h; sourceTree = "<group>"; };
+		22D43B73207E460E00A195E5 /* cast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cast.h; sourceTree = "<group>"; };
+		22D43B74207E460E00A195E5 /* rc4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rc4.h; sourceTree = "<group>"; };
+		22D43B75207E460E00A195E5 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		22D43B76207E460E00A195E5 /* des.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = des.h; sourceTree = "<group>"; };
+		22D43B77207E460E00A195E5 /* ocsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ocsp.h; sourceTree = "<group>"; };
+		22D43B78207E460E00A195E5 /* ec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ec.h; sourceTree = "<group>"; };
+		22D43B79207E460E00A195E5 /* ecdh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdh.h; sourceTree = "<group>"; };
+		22D43B7A207E460E00A195E5 /* rand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rand.h; sourceTree = "<group>"; };
+		22D43B7B207E460E00A195E5 /* ts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ts.h; sourceTree = "<group>"; };
+		22D43B7C207E460E00A195E5 /* pqueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pqueue.h; sourceTree = "<group>"; };
+		22D43B7D207E460E00A195E5 /* dso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dso.h; sourceTree = "<group>"; };
+		22D43B7E207E460E00A195E5 /* seed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = seed.h; sourceTree = "<group>"; };
+		22D43B7F207E460E00A195E5 /* modes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modes.h; sourceTree = "<group>"; };
+		22D43B80207E460E00A195E5 /* ssl2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl2.h; sourceTree = "<group>"; };
+		22D43B81207E460E00A195E5 /* rsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rsa.h; sourceTree = "<group>"; };
+		22D43B82207E460E00A195E5 /* krb5_asn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = krb5_asn.h; sourceTree = "<group>"; };
+		22D43B83207E460E00A195E5 /* des_old.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = des_old.h; sourceTree = "<group>"; };
+		22D43B84207E460E00A195E5 /* ripemd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ripemd.h; sourceTree = "<group>"; };
+		22D43B85207E460E00A195E5 /* whrlpool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = whrlpool.h; sourceTree = "<group>"; };
+		22D43B86207E460E00A195E5 /* tls1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tls1.h; sourceTree = "<group>"; };
+		22D43B87207E460E00A195E5 /* mdc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mdc2.h; sourceTree = "<group>"; };
+		22D43B88207E460E00A195E5 /* dsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dsa.h; sourceTree = "<group>"; };
+		22D43B89207E460E00A195E5 /* srtp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = srtp.h; sourceTree = "<group>"; };
+		22D43B8A207E460E00A195E5 /* asn1t.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1t.h; sourceTree = "<group>"; };
+		22D43B8B207E460E00A195E5 /* cmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmac.h; sourceTree = "<group>"; };
+		22D43B8C207E460E00A195E5 /* ebcdic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ebcdic.h; sourceTree = "<group>"; };
+		22D43B8D207E460E00A195E5 /* idea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = idea.h; sourceTree = "<group>"; };
+		22D43B8E207E460E00A195E5 /* lhash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lhash.h; sourceTree = "<group>"; };
+		22D43B91207E460E00A195E5 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		22D43B92207E460E00A195E5 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		378D58D8976FC3CF40809C33 /* Pods_RSA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C1A28FAE6CDED768D6A1983 /* Pods-RSA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSA.release.xcconfig"; path = "Pods/Target Support Files/Pods-RSA/Pods-RSA.release.xcconfig"; sourceTree = "<group>"; };
+		CBCCD39CFF8BECEB3100CC41 /* Pods-RSA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RSA/Pods-RSA.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2223964E207CB00F00FA616B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22D43B98207E460E00A195E5 /* libssl.a in Frameworks */,
+				22CBCD81207DEF3600D0C580 /* Security.framework in Frameworks */,
+				CA45F6C60D3C34C64BA60AC0 /* Pods_RSA.framework in Frameworks */,
+				22D43B97207E460E00A195E5 /* libcrypto.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22239648207CB00F00FA616B = {
+			isa = PBXGroup;
+			children = (
+				22D43B3F207E460E00A195E5 /* openssl */,
+				22CBCD93207DF90F00D0C580 /* BBRSACryptor */,
+				22239653207CB00F00FA616B /* RSA */,
+				22239652207CB00F00FA616B /* Products */,
+				22239666207CB02100FA616B /* RSA-Bridging-Header.h */,
+				F341A67B873522BA0A461138 /* Pods */,
+				2D7A617C282D9FC5E9567CD7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		22239652207CB00F00FA616B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22239651207CB00F00FA616B /* RSA.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22239653207CB00F00FA616B /* RSA */ = {
+			isa = PBXGroup;
+			children = (
+				22239654207CB00F00FA616B /* AppDelegate.swift */,
+				22239656207CB00F00FA616B /* ViewController.swift */,
+				22239658207CB00F00FA616B /* Main.storyboard */,
+				2223965B207CB00F00FA616B /* Assets.xcassets */,
+				2223965D207CB00F00FA616B /* LaunchScreen.storyboard */,
+				22239660207CB00F00FA616B /* Info.plist */,
+			);
+			path = RSA;
+			sourceTree = "<group>";
+		};
+		22CBCD93207DF90F00D0C580 /* BBRSACryptor */ = {
+			isa = PBXGroup;
+			children = (
+				22CBCD94207DF90F00D0C580 /* BBRSACryptor.h */,
+				22CBCD95207DF90F00D0C580 /* BBRSACryptor.m */,
+				22D43B3D207E408D00A195E5 /* RSATool.swift */,
+			);
+			path = BBRSACryptor;
+			sourceTree = "<group>";
+		};
+		22D43B3F207E460E00A195E5 /* openssl */ = {
+			isa = PBXGroup;
+			children = (
+				22D43B41207E460E00A195E5 /* include */,
+				22D43B90207E460E00A195E5 /* lib */,
+			);
+			path = openssl;
+			sourceTree = "<group>";
+		};
+		22D43B41207E460E00A195E5 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				22D43B42207E460E00A195E5 /* LICENSE */,
+				22D43B43207E460E00A195E5 /* openssl */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		22D43B43207E460E00A195E5 /* openssl */ = {
+			isa = PBXGroup;
+			children = (
+				22D43B44207E460E00A195E5 /* pem2.h */,
+				22D43B45207E460E00A195E5 /* pem.h */,
+				22D43B46207E460E00A195E5 /* ssl3.h */,
+				22D43B47207E460E00A195E5 /* ossl_typ.h */,
+				22D43B48207E460E00A195E5 /* dtls1.h */,
+				22D43B49207E460E00A195E5 /* err.h */,
+				22D43B4A207E460E00A195E5 /* bn.h */,
+				22D43B4B207E460E00A195E5 /* blowfish.h */,
+				22D43B4C207E460E00A195E5 /* cms.h */,
+				22D43B4D207E460E00A195E5 /* engine.h */,
+				22D43B4E207E460E00A195E5 /* conf_api.h */,
+				22D43B4F207E460E00A195E5 /* x509.h */,
+				22D43B50207E460E00A195E5 /* asn1_mac.h */,
+				22D43B51207E460E00A195E5 /* ui.h */,
+				22D43B52207E460E00A195E5 /* kssl.h */,
+				22D43B53207E460E00A195E5 /* sha.h */,
+				22D43B54207E460E00A195E5 /* symhacks.h */,
+				22D43B55207E460E00A195E5 /* asn1.h */,
+				22D43B56207E460E00A195E5 /* opensslconf.h */,
+				22D43B57207E460E00A195E5 /* bio.h */,
+				22D43B58207E460E00A195E5 /* rc2.h */,
+				22D43B59207E460E00A195E5 /* dh.h */,
+				22D43B5A207E460E00A195E5 /* ui_compat.h */,
+				22D43B5B207E460E00A195E5 /* x509v3.h */,
+				22D43B5C207E460E00A195E5 /* ssl23.h */,
+				22D43B5D207E460E00A195E5 /* conf.h */,
+				22D43B5E207E460E00A195E5 /* md5.h */,
+				22D43B5F207E460E00A195E5 /* x509_vfy.h */,
+				22D43B60207E460E00A195E5 /* txt_db.h */,
+				22D43B61207E460E00A195E5 /* safestack.h */,
+				22D43B62207E460E00A195E5 /* ecdsa.h */,
+				22D43B63207E460E00A195E5 /* objects.h */,
+				22D43B64207E460E00A195E5 /* pkcs12.h */,
+				22D43B65207E460E00A195E5 /* crypto.h */,
+				22D43B66207E460E00A195E5 /* opensslv.h */,
+				22D43B67207E460E00A195E5 /* pkcs7.h */,
+				22D43B68207E460E00A195E5 /* obj_mac.h */,
+				22D43B69207E460E00A195E5 /* buffer.h */,
+				22D43B6A207E460E00A195E5 /* ssl.h */,
+				22D43B6B207E460E00A195E5 /* srp.h */,
+				22D43B6C207E460E00A195E5 /* camellia.h */,
+				22D43B6D207E460E00A195E5 /* evp.h */,
+				22D43B6E207E460E00A195E5 /* e_os2.h */,
+				22D43B6F207E460E00A195E5 /* md4.h */,
+				22D43B70207E460E00A195E5 /* hmac.h */,
+				22D43B71207E460E00A195E5 /* aes.h */,
+				22D43B72207E460E00A195E5 /* comp.h */,
+				22D43B73207E460E00A195E5 /* cast.h */,
+				22D43B74207E460E00A195E5 /* rc4.h */,
+				22D43B75207E460E00A195E5 /* stack.h */,
+				22D43B76207E460E00A195E5 /* des.h */,
+				22D43B77207E460E00A195E5 /* ocsp.h */,
+				22D43B78207E460E00A195E5 /* ec.h */,
+				22D43B79207E460E00A195E5 /* ecdh.h */,
+				22D43B7A207E460E00A195E5 /* rand.h */,
+				22D43B7B207E460E00A195E5 /* ts.h */,
+				22D43B7C207E460E00A195E5 /* pqueue.h */,
+				22D43B7D207E460E00A195E5 /* dso.h */,
+				22D43B7E207E460E00A195E5 /* seed.h */,
+				22D43B7F207E460E00A195E5 /* modes.h */,
+				22D43B80207E460E00A195E5 /* ssl2.h */,
+				22D43B81207E460E00A195E5 /* rsa.h */,
+				22D43B82207E460E00A195E5 /* krb5_asn.h */,
+				22D43B83207E460E00A195E5 /* des_old.h */,
+				22D43B84207E460E00A195E5 /* ripemd.h */,
+				22D43B85207E460E00A195E5 /* whrlpool.h */,
+				22D43B86207E460E00A195E5 /* tls1.h */,
+				22D43B87207E460E00A195E5 /* mdc2.h */,
+				22D43B88207E460E00A195E5 /* dsa.h */,
+				22D43B89207E460E00A195E5 /* srtp.h */,
+				22D43B8A207E460E00A195E5 /* asn1t.h */,
+				22D43B8B207E460E00A195E5 /* cmac.h */,
+				22D43B8C207E460E00A195E5 /* ebcdic.h */,
+				22D43B8D207E460E00A195E5 /* idea.h */,
+				22D43B8E207E460E00A195E5 /* lhash.h */,
+			);
+			path = openssl;
+			sourceTree = "<group>";
+		};
+		22D43B90207E460E00A195E5 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				22D43B91207E460E00A195E5 /* libcrypto.a */,
+				22D43B92207E460E00A195E5 /* libssl.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		2D7A617C282D9FC5E9567CD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22CBCD80207DEF3600D0C580 /* Security.framework */,
+				378D58D8976FC3CF40809C33 /* Pods_RSA.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F341A67B873522BA0A461138 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBCCD39CFF8BECEB3100CC41 /* Pods-RSA.debug.xcconfig */,
+				5C1A28FAE6CDED768D6A1983 /* Pods-RSA.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22239650207CB00F00FA616B /* RSA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22239663207CB00F00FA616B /* Build configuration list for PBXNativeTarget "RSA" */;
+			buildPhases = (
+				404CD73D248B9C68963FE852 /* [CP] Check Pods Manifest.lock */,
+				2223964D207CB00F00FA616B /* Sources */,
+				2223964E207CB00F00FA616B /* Frameworks */,
+				2223964F207CB00F00FA616B /* Resources */,
+				BACE015463590A51B73000C9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RSA;
+			productName = RSA;
+			productReference = 22239651207CB00F00FA616B /* RSA.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22239649207CB00F00FA616B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = macos;
+				TargetAttributes = {
+					22239650207CB00F00FA616B = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2223964C207CB00F00FA616B /* Build configuration list for PBXProject "RSA" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22239648207CB00F00FA616B;
+			productRefGroup = 22239652207CB00F00FA616B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22239650207CB00F00FA616B /* RSA */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2223964F207CB00F00FA616B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2223965F207CB00F00FA616B /* LaunchScreen.storyboard in Resources */,
+				2223965C207CB00F00FA616B /* Assets.xcassets in Resources */,
+				22D43B96207E460E00A195E5 /* LICENSE in Resources */,
+				2223965A207CB00F00FA616B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		404CD73D248B9C68963FE852 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RSA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BACE015463590A51B73000C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RSA/Pods-RSA-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMBase64/GTMBase64.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMBase64.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSA/Pods-RSA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2223964D207CB00F00FA616B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22239657207CB00F00FA616B /* ViewController.swift in Sources */,
+				22D43B3E207E408D00A195E5 /* RSATool.swift in Sources */,
+				22239655207CB00F00FA616B /* AppDelegate.swift in Sources */,
+				22CBCD96207DF90F00D0C580 /* BBRSACryptor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		22239658207CB00F00FA616B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22239659207CB00F00FA616B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2223965D207CB00F00FA616B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2223965E207CB00F00FA616B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22239661207CB00F00FA616B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		22239662207CB00F00FA616B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22239664207CB00F00FA616B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBCCD39CFF8BECEB3100CC41 /* Pods-RSA.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YG32BA9FL9;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/UMengAnalytics-NO-IDFA\"",
+					"\"${PODS_ROOT}/Headers/Public/UMengUShare\"",
+					"\"$(SRCROOT)/RSA/openssl/include\"",
+					"\"$(SRCROOT)/openssl/include\"",
+				);
+				INFOPLIST_FILE = RSA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RSA/openssl",
+					"$(PROJECT_DIR)/openssl/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TCN.RSA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RSA-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22239665207CB00F00FA616B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C1A28FAE6CDED768D6A1983 /* Pods-RSA.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YG32BA9FL9;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/UMengAnalytics-NO-IDFA\"",
+					"\"${PODS_ROOT}/Headers/Public/UMengUShare\"",
+					"\"$(SRCROOT)/RSA/openssl/include\"",
+					"\"$(SRCROOT)/openssl/include\"",
+				);
+				INFOPLIST_FILE = RSA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RSA/openssl",
+					"$(PROJECT_DIR)/openssl/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TCN.RSA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RSA-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2223964C207CB00F00FA616B /* Build configuration list for PBXProject "RSA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22239661207CB00F00FA616B /* Debug */,
+				22239662207CB00F00FA616B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22239663207CB00F00FA616B /* Build configuration list for PBXNativeTarget "RSA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22239664207CB00F00FA616B /* Debug */,
+				22239665207CB00F00FA616B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22239649207CB00F00FA616B /* Project object */;
+}
